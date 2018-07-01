@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ثبت نام مشتری رویاس</string>
+    <string name="app_name_fa">ثبت مشتری رویاس</string>
+    <string name="save_new_customer">ثبت مشتری جدید</string>
+    <string name="hint_email">ایمیل (اختیاری)</string>
+    <string name="hint_address">آدرس (اختیاری)</string>
+    <string name="hint_phone">شماره ثابت (اختیاری)</string>
+    <string name="hint_phonenumber">شماره همراه</string>
+    <string name="hint_lastname">نام خانوادگی</string>
+    <string name="hint_firstname">نام</string>
+    <string name="save_new_customer_btn">ذخیره</string>
+    <string name="first_name_must_be_more_than_3">طول نام باید بیشتر از ۲ باشد</string>
+    <string name="last_name_must_be_more_than_3">طول نام خانوادگی باید بیشتر از ۳ باشد</string>
+    <string name="phone_number_must_be_11">طول شماره همراه باید ۱۱ عدد باشد</string>
+    <string name="update_customer">بروزرسانی اطلاعات</string>
+    <string name="update_customer_data">بروزرسانی اطلاعات مشتری</string>
+    <string name="please_wait">در حال بارگذاری...</string>
+    <string name="back">بازگشت</string>
+    <string name="update_user_data">بروزرسانی مشتری</string>
+    <string name="no_customer_exist">هیچ مشتری وجود ندارد</string>
+    <string name="add_new_customer">اضافه کردن مشتری جدید</string>
+</resources>

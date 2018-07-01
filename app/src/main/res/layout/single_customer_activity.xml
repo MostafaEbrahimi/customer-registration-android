@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/action_bar_main"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:id="@+id/top_shopping_card_total"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="2dp"
+                android:layout_height="match_parent">
+                <ir.meandme.persianviews.MyTextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="@string/update_user_data"
+                    android:layout_height="match_parent" />
+                <ir.meandme.persianviews.MyTextView
+                    android:id="@+id/back"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center"
+                    android:textColor="#ffffff"
+                    android:text="@string/back"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_below="@id/action_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested_scroller"
+                    android:layout_width="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:fillViewport="true"
+                    android:paddingTop="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_above="@id/save_btn"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ir.meandme.persianviews.MyEditText
+                            android:id="@+id/firstname"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:maxLength="15"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="@string/hint_firstname" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lastname"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ir.meandme.persianviews.MyEditText
+                            android:id="@+id/lastname"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:maxLength="20"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="@string/hint_lastname" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/input_layout_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ir.meandme.persianviews.MyEditText
+                            android:id="@+id/phonenumber"
+                            android:gravity="right"
+                            android:maxLength="11"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/hint_phonenumber" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/input_layout_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ir.meandme.persianviews.MyEditText
+                            android:id="@+id/phone"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:maxLength="18"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/hint_phone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/input_layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ir.meandme.persianviews.MyEditText
+                            android:id="@+id/email"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:hint="@string/hint_email" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/input_layout_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ir.meandme.persianviews.MyEditText
+                            android:id="@+id/address"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="@string/hint_address" />
+                    </android.support.design.widget.TextInputLayout>
+                    <ir.meandme.persianviews.MyTextView
+                        android:id="@+id/data_display"
+                        android:layout_marginRight="30dp"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/time_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+            </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+                <ir.meandme.persianviews.MyButton
+                    android:id="@+id/save_btn"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorAccent"
+                    android:textColor="#fff"
+                    android:text="@string/save_new_customer_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+        </RelativeLayout>
+
+
+</LinearLayout>

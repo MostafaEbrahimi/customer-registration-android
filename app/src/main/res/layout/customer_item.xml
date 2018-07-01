@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/customer_item"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:gravity="right|center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ir.meandme.persianviews.MyTextViewLight
+            android:id="@+id/shape_name"
+            android:layout_width="45dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:background="@drawable/circle_container"
+            android:layout_height="45dp" />
+
+        <ir.meandme.persianviews.MyTextView
+            android:id="@+id/customer_name"
+            android:layout_marginRight="15dp"
+            android:gravity="center|right"
+            android:textColor="#6e6e6e"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <View
+        android:background="#1A6e6e6e"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
